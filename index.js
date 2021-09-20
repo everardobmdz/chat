@@ -2,9 +2,9 @@ let express = require('express');
 let socket = require('socket.io');
 
 //App setup
-
+const port = process.env.PORT || 3000;
 let app = express();
-let server = app.listen(4000, ()=>  {console.log('listening to request on port 4000')});
+let server = app.listen(port, ()=>  {console.log('listening to request on port 4000')});
 
 //Static files
 app.use(express.static('public'));
