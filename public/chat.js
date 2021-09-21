@@ -1,5 +1,5 @@
 //Make connection
-let socket = io.connect('http://localhost:4000');
+let socket = io.connect('https://tareachat.herokuapp.com/');
 //Query DOM
 var message = document.getElementById("message");
 var handle = document.getElementById('handle');
