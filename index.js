@@ -7,7 +7,7 @@ let app = express();
 let server = app.listen(port, ()=>  {console.log('listening to request on port 4000')});
 
 //Static files
-app.use(express.static('/public'));
+app.use(express.static('public'));
 
 //socket setup
 
